@@ -63,7 +63,7 @@ document.addEventListener('visibilitychange', function() {
 	}
 });
 
-<!--动态线条背景-->
+
 var color_dark = "255,255,255";
 var color_light = "0,0,0";
 var opacity = '0.8';

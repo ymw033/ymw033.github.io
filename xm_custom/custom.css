@@ -6,7 +6,7 @@
 
 /* 设置背景图片 */
 body {
-  background: url(/public/img/10.jpg);
+  background: url(D:/selfblog/blog/public/img/10.jpg);
   background-attachment: fixed;
   background-size: cover;  
 }
