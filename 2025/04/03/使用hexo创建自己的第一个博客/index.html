@@ -72,7 +72,6 @@
   
 <link rel="stylesheet" href="/css/indeximg-hover.css">
 <link rel="stylesheet" href="/css/macpanel.css">
-<link rel="stylesheet" href="/css/macpanel.css">
 <link rel="stylesheet" href="/css/glassBg.css">
 <link rel="stylesheet" href="/css/sign.css">
 <link rel="stylesheet" href="/css/part-text.css">
@@ -330,7 +329,7 @@
 <p>创建SSH密钥：</p>
 <figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs excel">ssh-keygen -<span class="hljs-built_in">t</span> rsa -C <span class="hljs-string">&quot;GitHub 邮箱&quot;</span>  <br></code></pre></td></tr></table></figure>
 <p>在C:\Users\用户名.ssh目录会生成id_rsa.pub文件，我们可以复制里面的内容到Github上，Setting-&gt;SSH and GPG keys新建SSH密钥，将id_rsa.pub文件里的内容复制到里面。</p>
-<p>在GitHub配置好SSH后输入ssh -T <a href="mailto:&#103;&#105;&#x74;&#64;&#103;&#x69;&#116;&#x68;&#x75;&#98;&#46;&#99;&#111;&#109;">&#103;&#105;&#x74;&#64;&#103;&#x69;&#116;&#x68;&#x75;&#98;&#46;&#99;&#111;&#109;</a>进行连接验证。   </p>
+<p>在GitHub配置好SSH后输入ssh -T <a href="mailto:&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#109;">&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#109;</a>进行连接验证。   </p>
 <h1 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h1><p>我遇到过一个问题困扰了很久，就是编辑好的文章进行提交Github时一直提交不上去。后来进行SSH连接验证时发现，报错ssh: connect to host github.com port 22: Connection refused，经排查后发现这个错误是因为连接github.com的22端口被拒绝了，解决方案是更换为443端口。  </p>
 <p>输入命令</p>
 <figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arcade">vim ~<span class="hljs-regexp">/.ssh/</span>config  <br></code></pre></td></tr></table></figure>
@@ -674,6 +673,10 @@
   <script  src="/js/local-search.js" ></script>
 
 
+
+
+  
+<script src="/js/star.js"></script>
 
 
 
